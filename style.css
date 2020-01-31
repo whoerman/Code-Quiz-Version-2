@@ -1,0 +1,18 @@
+body {
+    background: url("./assets/codeImage.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    flex: content;
+}
+
+.whiteBG {
+    background-color: #ffffff;
+}
+
+.jumbotron {
+    padding: 1rem;
+    margin-bottom: 0rem;
+}
+
