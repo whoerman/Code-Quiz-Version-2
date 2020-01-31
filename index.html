@@ -13,6 +13,9 @@
   <!-- link to my CSS-->
   <link rel="stylesheet" type="text/css" href="style.css">
 
+  <!-- link to animate css on this folder-->
+  <link rel="stylesheet" type="text/css" href="animate.css">
+
   <!-- link to jQuery-->
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
@@ -31,19 +34,19 @@
       </div>
     </div>
 
-    <div class="container whiteBG">
-      <div class="row align-items-start">
+    <div class="container whiteBG buttonRow">
+      <div class="row align-items-center">
         <div class="col-sm-3 text-center">
           <button type="button" class="btn btn-success btn-lg" id = "start">Start the Quiz</button>
         </div>
-        <div class="col-sm-3">
-          Timer
+        <div class="col-sm-3 text-center">
+          <button type="button" class="btn btn-outline-dark btn-block" id = "timer">Timer: 60 seconds</button>
         </div>
-        <div class="col-sm-3">
-          Penalty Box
+        <div class="col-sm-3 text-center">
+          <button type="button" class="btn btn-danger btn-lg" id = "wrong">Wrong! 5 Seconds off!</button>
         </div>
-        <div class="col-sm-3">
-          Current score
+        <div class="col-sm-3 text-center">
+          <button type="button" class="btn btn-outline-info btn-block" id = "score">Your Score</button>
         </div>
       </div>
     </div>
