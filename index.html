@@ -29,7 +29,7 @@
   <div class="container">
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-4 text-center">Welcome to Code Quiz!</h1>
+        <h1 class="display-4 text-center" id="mainTitle">Welcome to Code Quiz!</h1>
         <p class="lead text-center">Test your knowledge of Javascript by answering multiple-choice questions.</p>
       </div>
     </div>
@@ -37,18 +37,20 @@
     <div class="container whiteBG buttonRow">
       <div class="row align-items-center">
         <div class="col-sm-3 text-center">
-          <button type="button" class="btn btn-success btn-lg" id = "start">Start the Quiz</button>
+          <button type="button" class="btn btn-success btn-lg" id="start"><span id=startText></span></button>
         </div>
         <div class="col-sm-3 text-center">
-          <button type="button" class="btn btn-outline-dark btn-block" id = "timer">Timer: 60 seconds</button>
+          <button type="button" class="btn btn-outline-dark btn-lg" id="timer"><span id=timerText></span></button>
         </div>
         <div class="col-sm-3 text-center">
-          <button type="button" class="btn btn-danger btn-lg" id = "wrong">Wrong! 5 Seconds off!</button>
+          <button type="button" class="btn btn-danger btn-lg" id="wrong">Wrong! 5 Seconds off!</button>
         </div>
         <div class="col-sm-3 text-center">
-          <button type="button" class="btn btn-outline-info btn-block" id = "score">Your Score</button>
+          <button type="button" class="btn btn-outline-info btn-lg" id="score"><span id=scoreText></span></button>
         </div>
+
       </div>
+      <hr>
     </div>
 
     <div class="container whiteBG">
@@ -61,7 +63,7 @@
         </div>
       </div>
     </div>
-    
+
   </div>
 
   <!-- link to my javascript-->
