@@ -10,6 +10,13 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+  <!-- FontAwesome icons CSS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+  <!-- Google fonts CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+
   <!-- link to my CSS-->
   <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -29,7 +36,7 @@
   <div class="container">
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-4 text-center" id="mainTitle">Welcome to Code Quiz!</h1>
+        <h1 class="display-4 text-center" id="mainTitle"><i class="fab fa-js-square"></i> Welcome to Code Quiz!</h1>
         <p class="lead text-center">Test your knowledge of Javascript by answering multiple-choice questions.</p>
       </div>
     </div>
@@ -37,33 +44,39 @@
     <div class="container whiteBG buttonRow">
       <div class="row align-items-center">
         <div class="col-sm-3 text-center">
-          <button type="button" class="btn btn-success btn-lg" id="start"><span id=startText></span></button>
+          <button type="button" class="btn btn-success btn-lg" id="start"><i class="fas fa-step-backward"></i><span id=startText></span></button>
         </div>
         <div class="col-sm-3 text-center">
-          <button type="button" class="btn btn-outline-dark btn-lg" id="timer"><span id=timerText></span></button>
+          <button type="button" class="btn btn-outline-dark btn-lg" id="timer"><i class="fas fa-stopwatch"></i><span id=timerText></span></button>
+        </div>
+        <div class="col-sm-3 text-center">
+          <button type="button" class="btn btn-outline-info btn-lg" id="score"><i class="fas fa-clipboard-list"></i><span id=scoreText></span></button>
         </div>
         <div class="col-sm-3 text-center">
           <button type="button" class="btn btn-danger btn-lg" id="wrong">Wrong! 5 Seconds off!</button>
         </div>
-        <div class="col-sm-3 text-center">
-          <button type="button" class="btn btn-outline-info btn-lg" id="score"><span id=scoreText></span></button>
-        </div>
-
       </div>
       <hr>
     </div>
 
-    <div class="container whiteBG">
+    <div class="container whiteBG questionBox">
       <div class="row">
-        <div class="col-sm-3">
-          Current High Scores
+        <div class="col-sm-3 text-center">
+          <h5><i class="fas fa-clipboard-list"></i> Current High Scores</h5>
+          <button type="button" class="btn btn-secondary btn-block m-1" id="clear"><i class="fas fa-cut"></i> Clear the scores</button>
+          <button type="button" class="btn btn-info btn-block m-1" id="restart"><i class="fas fa-window-restore"></i> Restart the Game</button>
         </div>
         <div class="col-sm-9">
-          test question div
+          <p id="question"><span></span></p>
+          <hr>
+          <h2 id="optionA" class="answerFormat" data-value="A"><span></span></h2>
+          <h2 id="optionB" class="answerFormat" data-value="B"><span></span></h2>
+          <h2 id="optionC" class="answerFormat" data-value="C"><span></span></h2>
+          <h2 id="optionD" class="answerFormat" data-value="D"><span></span></h2>
+          <hr>
         </div>
       </div>
     </div>
-
   </div>
 
   <!-- link to my javascript-->
