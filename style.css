@@ -12,8 +12,9 @@ body {
 }
 
 .buttonRow {
-    height: 70px;
     align-items: center;
+    margin-bottom: 0rem;
+
 }
 
 .jumbotron {
@@ -22,6 +23,6 @@ body {
 }
 
 .questionBox {
-    height: 400px;
+    margin-top: 0rem;
        
 }

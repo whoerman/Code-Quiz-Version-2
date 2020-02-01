@@ -44,13 +44,16 @@
     <div class="container whiteBG buttonRow">
       <div class="row align-items-center">
         <div class="col-sm-3 text-center">
-          <button type="button" class="btn btn-success btn-lg" id="start"><i class="fas fa-step-backward"></i><span id=startText></span></button>
+          <button type="button" class="btn btn-success btn-lg" id="start"><i class="fas fa-step-backward"></i><span
+              id=startText></span></button>
         </div>
         <div class="col-sm-3 text-center">
-          <button type="button" class="btn btn-outline-dark btn-lg" id="timer"><i class="fas fa-stopwatch"></i><span id=timerText></span></button>
+          <button type="button" class="btn btn-outline-dark btn-lg" id="timer"><i class="fas fa-stopwatch"></i><span
+              id=timerText></span></button>
         </div>
         <div class="col-sm-3 text-center">
-          <button type="button" class="btn btn-outline-info btn-lg" id="score"><i class="fas fa-clipboard-list"></i><span id=scoreText></span></button>
+          <button type="button" class="btn btn-outline-info btn-lg" id="score"><i
+              class="fas fa-clipboard-list"></i><span id=scoreText></span></button>
         </div>
         <div class="col-sm-3 text-center">
           <button type="button" class="btn btn-danger btn-lg" id="wrong">Wrong! 5 Seconds off!</button>
@@ -62,18 +65,42 @@
     <div class="container whiteBG questionBox">
       <div class="row">
         <div class="col-sm-3 text-center">
-          <h5><i class="fas fa-clipboard-list"></i> Current High Scores</h5>
-          <button type="button" class="btn btn-secondary btn-block m-1" id="clear"><i class="fas fa-cut"></i> Clear the scores</button>
-          <button type="button" class="btn btn-info btn-block m-1" id="restart"><i class="fas fa-window-restore"></i> Restart the Game</button>
+          <div>
+            <hr>
+            <h5><i class="fas fa-clipboard-list"></i> Current High Scores</h5>
+          </div>
+
+          <button type="button" class="btn btn-secondary btn-block m-1" id="clear"><i class="fas fa-cut"></i> Clear the
+            scores</button>
+          <button type="button" class="btn btn-info btn-block m-1" id="restart"><i class="fas fa-window-restore"></i>
+            Restart the Game</button>
         </div>
         <div class="col-sm-9">
-          <p id="question"><span></span></p>
-          <hr>
-          <h2 id="optionA" class="answerFormat" data-value="A"><span></span></h2>
-          <h2 id="optionB" class="answerFormat" data-value="B"><span></span></h2>
-          <h2 id="optionC" class="answerFormat" data-value="C"><span></span></h2>
-          <h2 id="optionD" class="answerFormat" data-value="D"><span></span></h2>
-          <hr>
+          <div>
+            <hr>
+            <p class = "questionDiv" id="question"><span>Here is the Question?</span></p>
+            <hr>
+          </div>
+          <div>
+
+            <button type="button" class="btn btn-outline-dark btn-lg m-1 answer" id="optionA"></i><span id=AText>A:
+                Answer A</span></button>
+          </div>
+          <div>
+            <button type="button" class="btn btn-outline-dark btn-lg m-1 answer" id="optionB"></i><span id=BText>B:
+                Answer B</span></button>
+          </div>
+          <div>
+            <button type="button" class="btn btn-outline-dark btn-lg m-1 answer" id="optionC"></i><span id=CText>C:
+                Answer C</span></button>
+          </div>
+          <div>
+            <button type="button" class="btn btn-outline-dark btn-lg m-1 answer" id="optionD"></i><span id=DText>D:
+                Answer D</span></button>
+          </div>
+          <div>
+            <hr>
+          </div>
         </div>
       </div>
     </div>
